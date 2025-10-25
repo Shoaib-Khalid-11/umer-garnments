@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist" # or "build" if you use CRA (Create React App)
+
+# Redirect all routes to index.html (SPA fix)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
