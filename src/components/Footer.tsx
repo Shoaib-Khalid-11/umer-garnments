@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, Instagram, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import AppIcon from "./AppIcon";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,37 +21,37 @@ const Footer = () => {
             </p>
             <div className="flex gap-3">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/1Cf6AxRkFg/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-md bg-background hover:bg-primary hover:text-primary-foreground transition-colors"
               >
-                <Facebook size={18} />
+                <AppIcon icon={"fe:facebook"} fontSize={24} />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://t.me/hamiprince750"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-md bg-background hover:bg-primary hover:text-primary-foreground transition-colors"
               >
-                <Twitter size={18} />
+                <AppIcon icon={"ic:sharp-telegram"} fontSize={24} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://wa.me/qr/JTA3JO6JDSUUN1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-md bg-background hover:bg-primary hover:text-primary-foreground transition-colors"
               >
-                <Linkedin size={18} />
+                <AppIcon icon={"mdi:whatsapp"} fontSize={24} />
               </a>
-              <a
+              {/* <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-md bg-background hover:bg-primary hover:text-primary-foreground transition-colors"
               >
                 <Instagram size={18} />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -145,7 +146,7 @@ const Footer = () => {
                 className="text-sm"
               />
               <Button variant="default" size="sm">
-                <Mail size={16} />
+                <AppIcon icon={"fluent:mail-28-regular"} fontSize={24} />
               </Button>
             </div>
           </div>
